@@ -1,0 +1,49 @@
+{
+  "name": "strapi-plugin-request-id",
+  "version": "1.0.0",
+  "description": "Add a unique id to each request made to your server and track your users' activity in the logs.",
+  "strapi": {
+    "name": "request-id",
+    "description": "Add a unique id to each request made to your server and track your users' activity in the logs",
+    "kind": "plugin",
+    "displayName": "Request Id"
+  },
+  "dependencies": {
+    "cls-hooked": "4.2.2",
+    "uuid": "8.3.2"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^4.0.0"
+  },
+  "author": {
+    "name": "Baboo",
+    "url": "https://github.com/Baboo7"
+  },
+  "maintainers": [
+    {
+      "name": "Baboo",
+      "url": "https://github.com/Baboo7"
+    }
+  ],
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "keywords": [
+    "strapi",
+    "plugin",
+    "request",
+    "id",
+    "correlation",
+    "id"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baboo7/strapi-plugin-request-id.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Baboo7/strapi-plugin-request-id/issues"
+  },
+  "homepage": "https://github.com/Baboo7/strapi-plugin-request-id#readme",
+  "license": "MIT"
+}
