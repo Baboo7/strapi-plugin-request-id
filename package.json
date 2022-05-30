@@ -4,7 +4,7 @@
   "description": "Add a unique id to each request made to your server and track your users' activity in the logs.",
   "strapi": {
     "name": "request-id",
-    "description": "Add a unique id to each request made to your server and track your users' activity in the logs",
+    "description": "Add a unique id to each request made to your server and track your users' activity in the logs.",
     "kind": "plugin",
     "displayName": "Request Id"
   },
