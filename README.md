@@ -102,6 +102,26 @@ Will produce the logs:
 
 You can then track `user 1`'s activity by filtering the logs with `x-request-id="04dd66c9-3d3e-4188-8ae8-32703d864862"`, or accross your services using `x-correlation-id`.
 
+By default, strapi doesn't display the logs as json in the console. If you want to see the `request id` and `correlation id` while developing, create the file `config/logger.js` and use this configuration:
+
+```js
+"use strict";
+
+const { winston } = require("@strapi/logger");
+
+module.exports = {
+  transports: [
+    new winston.transports.Console({
+      level: "silly",
+      format: winston.format.combine(
+        winston.format.timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
+        winston.format.json()
+      ),
+    }),
+  ],
+};
+```
+
 ### Example 2: access the request/correlation id of a request
 
 The `request id` and `correlation id` are added to the **headers of the response**. They can be accessed through the `ctx.response` object:
