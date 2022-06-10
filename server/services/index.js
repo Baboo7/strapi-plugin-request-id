@@ -1,3 +1,7 @@
 "use strict";
 
-module.exports = {};
+const requestId = require("./request-id");
+
+module.exports = {
+  "request-id": requestId,
+};
