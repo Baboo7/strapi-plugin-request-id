@@ -14,14 +14,23 @@ Add a unique id to each request made to your server and track your users' activi
 ## Table Of Content
 
 - [Requirements](#requirements)
+- [Feedback](#feedback)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Related Plugins](#related-plugins)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Requirements
 
 Strapi v4 is required.
+
+## Feedback
+
+<p align="center">
+  <img src="./doc/discord-logo.png" alt="UI" width="100"/>
+</p>
+
+Join the [Discord Community](https://discord.gg/MZE9dcMe) to give your feedback.
 
 ## Installation
 
@@ -142,6 +151,10 @@ const endpoint = (ctx) => {
   ctx.body = { data: res.data };
 };
 ```
+
+## Related Plugins
+
+- [Strapi Plugin Import Export Entries](https://github.com/Baboo7/strapi-plugin-import-export-entries): Import/Export data from and to your database in just few clicks
 
 ## Author
 
